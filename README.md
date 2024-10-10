@@ -5,7 +5,7 @@
 
 
 
-# ஒலி உருவாக்கி 
+## ஒலி உருவாக்கி 
 
 
 [1.1]: http://www.tensorlet.org/wp-content/uploads/2021/01/button_twitter_22x22.png
@@ -34,7 +34,6 @@
 <img align="center" src="images/finrl_framework.png" width="55%"/>
 </div>
 
-## File Structure
 ## File Structure
 
 The main folder 
