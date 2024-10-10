@@ -31,7 +31,7 @@
 குறளை வாசிக்க, ஒலிக்கோப்பைத் திறக்கவும் பொத்தானை அழுத்தி உங்களுக்குத் தேவையான ஒலிகோப்பை கேட்கவும், அல்லது தேவையானால் பிரதி செய்யலாம்.
 
 <div align="center">
-<img align="center" src="images/finrl_framework.png" width="55%"/>
+<img align="center" src="FS.png" width="55%"/>
 </div>
 
 ## File Structure
