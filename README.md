@@ -31,17 +31,15 @@
 
 ## Overview
 
-FinRL has three layers: market environments, agents, and applications.  For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
+
 
 <div align="center">
 <img align="center" src=figs/finrl_framework.png>
 </div>
 
-A quick start: Stock_NeurIPS2018.ipynb. Videos [FinRL](http://www.youtube.com/watch?v=ZSGJjtM-5jA) at [AI4Finance Youtube Channel](https://www.youtube.com/channel/UCrVri6k3KPBa3NhapVV4K5g).
-
 
 ## File Structure
-<a
+
 The main folder 
 .
 ├── audios
@@ -76,7 +74,7 @@ The main folder
 ├── அன்பிற்கும்_உண்டோ.mp3
 ├── மென்பொருள்_வழிகாட்டி.md
 └── வேண்டுதல்_வேண்டாமை.mp3
-/a>
+
 
 ## Supported Data Sources
 
