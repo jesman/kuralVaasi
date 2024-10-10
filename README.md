@@ -21,10 +21,8 @@
 
 - [Overview](#Overview)
 - [File Structure](#File-Structure)
-
 - [Publications](#Publications)
 - [News](#News)
--
 - [Welcome Contributions](#To-Contribute)
 - [Sponsorship](#Sponsorship)
 - [LICENSE](#LICENSE)
@@ -88,6 +86,9 @@ The Kural application supports the following data sources for accessing and disp
 - **Web Scraping**: Gathers data from authorized websites hosting Thirukkural content.
 
 For detailed instructions on how to configure each data source, please refer to the [Documentation](#).
+
+
+
 
 
 
