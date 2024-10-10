@@ -35,5 +35,40 @@
 </div>
 
 ## File Structure
+## File Structure
 
-The main folder:
+The main folder 
+
+├── audios
+│   ├── அன்பிற்கும்_உண்டோ.mp3
+│   ├── ஒலிக்கோப்பு_உருவாக்கி.mp3
+│   └── செல்லாமை_உண்டேல்.mp3
+├── data
+│   ├── kural_tam.txt
+│   ├── kural.txt
+│   └── LICENSE
+├── equalizer.py
+├── Guide.md
+├── Guide.pdf
+├── help.py
+├── images
+│   ├── Create_audio_MP3.png
+│   ├── help.png
+│   ├── main_app.png
+│   ├── Open_and_Play.png
+│   └── search_kural.png
+├── LICENSE
+├── main.py
+├── mp3_generator.py
+├── __pycache__
+│   ├── equalizer.cpython-310.pyc
+│   ├── help.cpython-310.pyc
+│   └── mp3_generator.cpython-310.pyc
+├── README.md
+├── res
+│   ├── Guide.md
+│   └── Guide.pdf
+├── அன்பிற்கும்_உண்டோ.mp3
+├── மென்பொருள்_வழிகாட்டி.md
+└── வேண்டுதல்_வேண்டாமை.mp3
+
