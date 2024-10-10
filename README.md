@@ -11,30 +11,17 @@
 [4]: https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Fgithub.com%2FAI4Finance-Foundation%2FFinRL
 
 <div align="center">
-<img align="center" src=figs/logo_transparent_background.png width="55%"/>
+<img align="center" src=figs/logo_transparent_background width="55%"/>
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-## Outline
 
-- [Overview](#Overview)
-- [File Structure](#File-Structure)
-- [Supported Data Sources](#Supported-Data-Sources)
-- [Installation](#Installation)
-- [Status Update](#Status-Update)
-- [Tutorials](#Tutorials)
-- [Publications](#Publications)
-- [News](#News)
-- [Citing FinRL](#Citing-FinRL)
-- [Welcome Contributions](#To-Contribute)
-- [Sponsorship](#Sponsorship)
-- [LICENSE](#LICENSE)
+திருக்குறள் செயலியில் உள்ள "திருக்குறள் தேடு" அம்சத்தை எளிமையாகப் பயன்படுத்த இந்த வழிகாட்டி உதவும். முதலில் செயலியை Python3 main.py என்ற கட்டளையை செயல்படுத்தி தொடங்கலாம். திருக்குறளின் மூன்று தாவல்கள் - அறத்துப்பால், பொருட்பால், காமத்துப்பால் - கீழே காணப்படும். இவற்றில், நீங்கள் விரும்பிய அதிகாரத்தை தேர்ந்தெடுக்க முடியும்.
+தேடல் பட்டியைப் பயன்படுத்தி குறள்களை எண், அதிகாரம், அல்லது சொல்லின் அடிப்படையில் தேடலாம். குறள் எண் (எ.கா., 1, 250) அல்லது சொல் (எ.கா., "அறம்", "அன்பு") தேடல் மூலம் பொருந்திய குறள் பட்டியலிடப்படும். தேடல் முடிவுகளில் குறள் எண் மற்றும் அதற்கான அதிகாரம் உடனடியாக காட்டப்படும். தவறான குறள் எண்ணை அல்லது பொருந்தாத சொற்களைத் தேடும்போது உறுதிப்படுத்தும் செய்திகளும் கிடைக்கும்.
 
-## Overview
-
-FinRL has three layers: market environments, agents, and applications.  For a trading task (on the top), an agent (in the middle) interacts with a market environment (at the bottom), making sequential decisions.
+மேலும், தேடல் முடிவுகளை ஒலியாக உருவாக்கி கேட்கவும், ஒலியுருவாக்கி 
 
 <div align="center">
 <img align="center" src=figs/finrl_framework.png>
