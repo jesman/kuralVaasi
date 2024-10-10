@@ -21,13 +21,10 @@
 
 - [Overview](#Overview)
 - [File Structure](#File-Structure)
-- [Supported Data Sources](#Supported-Data-Sources)
-- [Installation](#Installation)
-- [Status Update](#Status-Update)
-- [Tutorials](#Tutorials)
+
 - [Publications](#Publications)
 - [News](#News)
-- [Citing FinRL](#Citing-FinRL)
+-
 - [Welcome Contributions](#To-Contribute)
 - [Sponsorship](#Sponsorship)
 - [LICENSE](#LICENSE)
