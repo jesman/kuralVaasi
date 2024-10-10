@@ -46,10 +46,9 @@
 
 
 
+
 ## File Structure
 
-The main folder 
-.
 ├── audios
 │   ├── அன்பிற்கும்_உண்டோ.mp3
 │   ├── ஒலிக்கோப்பு_உருவாக்கி.mp3
