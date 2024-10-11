@@ -1,20 +1,6 @@
 
-
-
-
-
-
-
 ## ஒலி உருவாக்கி 
 
-
-[1.1]: http://www.tensorlet.org/wp-content/uploads/2021/01/button_twitter_22x22.png
-[1.2]: http://www.tensorlet.org/wp-content/uploads/2021/01/facebook-button_22x22.png
-[1.4]: http://www.tensorlet.org/wp-content/uploads/2021/01/button_linkedin_22x22.png
-
-[1]: https://twitter.com/intent/tweet?text=FinRL-Financial-Deep-Reinforcement-Learning%20&url=https://github.com/jesman/kuralreadTamil&hashtags=DRL&hashtags=AI
-[2]: https://www.facebook.com/sharer.php?u=http%3A%2F%2Fgithub.com%2FAI4Finance-Foundation%2FFinRL
-[4]: https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Fgithub.com%2FAI4Finance-Foundation%2FFinRL
 
 <div align="center">
 <img align="center" src="Audio_Play.png" width="55%"/>
@@ -71,3 +57,6 @@ The main folder
 ├── மென்பொருள்_வழிகாட்டி.md
 └── வேண்டுதல்_வேண்டாமை.mp3
 
+நீங்கள் மேலும் மாற்றங்களை விரும்பினால், தயவுசெய்து எனக்கு தெரியப்படுத்துங்கள்!
+Author: Jesman Anthonypillai
+மின்னஞ்சல்: jesman@gmail.com
