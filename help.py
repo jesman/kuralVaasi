@@ -8,10 +8,8 @@ Email: jesman23@gmail.com
 Date: 2024-07-05
 Version: 1.0
 
-Description: This script provides functionality to generate Tamil text-to-speech
-             using gTTS (Google Text-to-Speech) and play the generated audio using
-             the Pygame mixer module. It allows users to input Tamil text, generate 
-             an MP3 file, and listen to the generated audio.
+Description: This script provides functionality to generate help 
+             Module for main app
 
 License: MIT License
 """
