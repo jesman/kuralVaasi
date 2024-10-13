@@ -14,7 +14,7 @@ Clone the Repository
 
 Open your terminal or command prompt and run the following command to clone the repository:
 
-git clone https://github.com/jesmane/kuralVaasi.git
+git clone https://github.com/jesman/kuralVaasi.git
 cd kuralVaasi
 
 Create a Virtual Environment (optional)
