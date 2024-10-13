@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+Filename: equalizer.py
+Author: Jesman Anthonypillai
+Email: jesman23@gmail.com
+Date: 2024-07-14
+Version: 1.0
+Description: This script provides functionality to generate Tamil text-to-speech
+             using gTTS (Google Text-to-Speech) and play the generated audio using
+             the Pygame mixer module. It allows users to input Tamil text, generate 
+             an MP3 file, and listen to the generated audio.
+
+License: MIT License
+"""
+
 import random
 import sys
 import pygame
