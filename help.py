@@ -5,7 +5,7 @@
 Filename: help.py
 Author: Jesman Anthonypillai
 Email: jesman23@gmail.com
-Date: 2024-07-D5
+Date: 2024-07-05
 Version: 1.0
 
 Description: This script provides functionality to generate Tamil text-to-speech
@@ -14,10 +14,7 @@ Description: This script provides functionality to generate Tamil text-to-speech
              an MP3 file, and listen to the generated audio.
 
 License: MIT License
-
 """
-
-
 
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
 
@@ -55,15 +52,30 @@ class show_help(QWidget):
         )
 
         # Create a QLabel to display the help text
-        help_label = QLabel(help_text)
+        help_label = QLabel(help_text)  # Create QLabel with the help text
+        help_label.setStyleSheet("font-size: 18px; color: gold; font-weight: bold;")  # Set style for QLabel
+        
         help_label.setWordWrap(True)  # Ensure text wraps within the window
         layout.addWidget(help_label)
 
         # Create a close button
         close_button = QPushButton("மூடு")  # Button text in Tamil
+        close_button.setStyleSheet("background-color: lightgray; border: 1px solid gray;")  # Set style for QPushButton
+        
         close_button.clicked.connect(self.close)  # Connect the button to the close method
         layout.addWidget(close_button)
 
         # Set the layout for the widget
         self.setLayout(layout)
+
+
+# Usage example in your main application
+if __name__ == "__main__":
+    from PyQt5.QtWidgets import QApplication
+    import sys
+
+    app = QApplication(sys.argv)
+    help_window = show_help()
+    help_window.show()
+    sys.exit(app.exec_())
 
