@@ -36,52 +36,16 @@
 ஒலிக்கோப்பைத் திறக்கவும்  பொத்தானை அழுத்ததி உங்களுக்குத் தேவையாய ஒலிகோப்பை கேட்க்க மூடியும் அல்லது தேவையானால் பிரதி செய்யலாம்.
 
 
-பயனர் இடைமுகம்: உங்களுக்கு விருப்பமுள்ள மாற்றங்களைச் செய்யலாம்.
-தொழில்நுட்ப ஆதரவு:
-செயலியைப் பயன்படுத்துவதில் ஏதேனும் சிக்கல்கள் அல்லது கேள்விகள் இருந்தால், கீழ்காணும் வழிகளால் உதவி பெறலாம்:
-email: jesman23@gamil.com
 
 
 <div align="center">
 <img align="center" src="FS.png" width="55%"/>
 </div>
 
-## File Structure
-
-The main folder 
-
-├── audios
-│   ├── அன்பிற்கும்_உண்டோ.mp3
-│   ├── ஒலிக்கோப்பு_உருவாக்கி.mp3
-│   └── செல்லாமை_உண்டேல்.mp3
-├── data
-│   ├── kural_tam.txt
-│   ├── kural.txt
-│   └── LICENSE
-├── equalizer.py
-├── Guide.md
-├── Guide.pdf
-├── help.py
-├── images
-│   ├── Create_audio_MP3.png
-│   ├── help.png
-│   ├── main_app.png
-│   ├── Open_and_Play.png
-│   └── search_kural.png
-├── LICENSE
-├── main.py
-├── mp3_generator.py
-
-├── README.md
-├── res
-│   ├── Guide.md
-│   └── Guide.pdf
-├── அன்பிற்கும்_உண்டோ.mp3
-├── மென்பொருள்_வழிகாட்டி.md
-└── வேண்டுதல்_வேண்டாமை.mp3
-
-நீங்கள் மேலும் மாற்றங்களை விரும்பினால், தயவுசெய்து எனக்கு தெரியப்படுத்துங்கள்!
 
 
-Author: Jesman Anthonypillai
-மின்னஞ்சல்: jesman@gmail.com
+## நீங்கள் மேலும் மாற்றங்களை விரும்பினால், தயவுசெய்து எனக்கு தெரியப்படுத்துங்கள்!
+
+
+## Author: Jesman Anthonypillai
+## மின்னஞ்சல்: jesman@gmail.com
