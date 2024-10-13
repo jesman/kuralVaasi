@@ -1,4 +1,6 @@
-PyQt5>=5.15.0
-gTTS>=2.2.3
-pygame>=2.0.0
+Python==3.9.16
+PyQt5==5.15.9
+pygame==2.5.0
+python-vlc==3.0.8866
+gTTS==2.2.3
 
