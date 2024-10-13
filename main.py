@@ -26,7 +26,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-from equalizer import Equalizer  # Import the Equalizer class from old_app.py
+from equalizer import Equalizer  # Import the Equalizer class from equalizer.py
 from mp3_generator import TTSApp
 from help import show_help
 
@@ -37,9 +37,75 @@ class ThirukkuralApp(QMainWindow):
         self.setWindowTitle('குறள் கேட்டு அதன்வழி வாழ்வோம்')
         self.setGeometry(100, 100, 1000, 600)
 
-        # Set dark mode style
-        self.setStyleSheet("background-color: #2E2E2E; color: white;")
+        # Set Modern Dark Mode style with Teal accents and Bold Texts
         
+              
+        self.setStyleSheet("""
+            QMainWindow {
+                background-color: #121212;  /* Dark background */
+                color: #FFFFFF;  /* White text */
+                font-weight: bold;  /* Bold text */
+            }
+            QPushButton {
+                background-color: #1ABC9C;  /* Teal */
+                color: #FFFFFF;  /* White text */
+                border: none;
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                font-weight: bold;  /* Bold text */
+            }
+            QPushButton:hover {
+                background-color: #16A085;  /* Darker Teal on hover */
+            }
+            QListWidget {
+                background-color: #1E1E1E;  /* Darker list background */
+                color: #FFFFFF;  /* White text */
+                border: 1px solid #1ABC9C;  /* Teal border */
+                border-radius: 5px;
+                font-weight: bold;  /* Bold text */
+            }
+            QTextEdit {
+                background-color: #1E1E1E;  /* Text area background */
+                color: #FFFFFF;  /* White text */
+                border: 1px solid #1ABC9C;  /* Teal border */
+                border-radius: 5px;
+                font-weight: bold;  /* Bold text */
+            }
+            QLineEdit {
+                background-color: #1E1E1E;  /* Input field background */
+                color: #FFFFFF;  /* White text */
+                border: 1px solid #1ABC9C;  /* Teal border */
+                padding: 5px;
+                border-radius: 5px;
+                font-weight: bold;  /* Bold text */
+            }
+            QTabWidget::pane {
+                border: 1px solid #1ABC9C;  /* Teal border for tabs */
+                border-radius: 5px;
+            }
+            QTabBar::tab {
+                background: #1ABC9C;  /* Tab background */
+                color: #121212;  /* Tab text */
+                padding: 10px;
+                border-radius: 5px;
+                margin-right: 2px;
+                font-weight: bold;  /* Bold text */
+            }
+            QTabBar::tab:selected {
+                background: #16A085;  /* Selected tab color */
+                color: #FFFFFF;  /* White text */
+                font-weight: bold;  /* Bold text */
+            }
+            QFrame {
+                background-color: #1E1E1E;  /* Darker frame background */
+                border-radius: 5px;
+            }
+        """)
+
+        
+
+
         self.kural_data = self.load_kural_data('./data/kural.txt')
         self.kural_tam_data = self.load_kural_data('./data/kural_tam.txt')
 
@@ -49,8 +115,6 @@ class ThirukkuralApp(QMainWindow):
 
         self.create_sidebar()
         self.create_central_content()
-        
-      
 
     def load_kural_data(self, file_path):
         """Loads Kural data from a specified file."""
@@ -71,8 +135,6 @@ class ThirukkuralApp(QMainWindow):
         sidebar_layout.setContentsMargins(10, 10, 10, 10)
         sidebar_layout.setSpacing(20)
 
-
-
         # Sidebar Buttons
         btn_thirukkural = QPushButton("திருக்குறள்")
         btn_thirukkural.clicked.connect(lambda: self.switch_view("Thirukkural"))
@@ -86,9 +148,6 @@ class ThirukkuralApp(QMainWindow):
         # Button for Help
         help_button = QPushButton("உதவி")  # Changed "Help" to "உதவி"
         help_button.clicked.connect(lambda: self.switch_view("Help"))
-        
-        #help_button.clicked.connect(self.show_help)  # Change this line
-
 
         btn_exit = QPushButton("வெளியேறு")
         btn_exit.clicked.connect(self.close)
@@ -106,35 +165,28 @@ class ThirukkuralApp(QMainWindow):
         self.sidebar.setLayout(sidebar_layout)
         self.main_layout.addWidget(self.sidebar)
 
-        
-
-
     def create_central_content(self):
-          """Creates the central content area with QStackedWidget."""
-          self.stacked_widget = QStackedWidget()
+        """Creates the central content area with QStackedWidget."""
+        self.stacked_widget = QStackedWidget()
 
-          self.thirukkural_tabs = QTabWidget()
-          self.create_arathuppaal_tab()
-          self.create_porutpaal_tab()
-          self.create_kamathuppaal_tab()
-          self.stacked_widget.addWidget(self.thirukkural_tabs)
+        self.thirukkural_tabs = QTabWidget()
+        self.create_arathuppaal_tab()
+        self.create_porutpaal_tab()
+        self.create_kamathuppaal_tab()
+        self.stacked_widget.addWidget(self.thirukkural_tabs)
 
-          self.equalizer_widget = Equalizer()
-          self.stacked_widget.addWidget(self.equalizer_widget)
+        self.equalizer_widget = Equalizer()
+        self.stacked_widget.addWidget(self.equalizer_widget)
 
-          self.audio_maker_widget = TTSApp()  # Create an instance of the TTSApp
-          self.stacked_widget.addWidget(self.audio_maker_widget)  # Add TTSApp to the stack
+        self.audio_maker_widget = TTSApp()  # Create an instance of the TTSApp
+        self.stacked_widget.addWidget(self.audio_maker_widget)  # Add TTSApp to the stack
 
-          # For help
-          self.help_widget = show_help()  # Ensure this is defined/imported
-          self.stacked_widget.addWidget(self.help_widget)  # Use self.help_widget here
+        # For help
+        self.help_widget = show_help()  # Ensure this is defined/imported
+        self.stacked_widget.addWidget(self.help_widget)  # Use self.help_widget here
 
-          self.main_layout.addWidget(self.stacked_widget)
-          self.stacked_widget.setCurrentWidget(self.thirukkural_tabs)
-
-
-
-
+        self.main_layout.addWidget(self.stacked_widget)
+        self.stacked_widget.setCurrentWidget(self.thirukkural_tabs)
 
     # MAKE CHANGERS TO ADD MORE on SIDEBAR
 
@@ -142,21 +194,15 @@ class ThirukkuralApp(QMainWindow):
         """Switches the central view based on the button clicked."""
         if view_name == "Thirukkural":
             self.stacked_widget.setCurrentWidget(self.thirukkural_tabs)
-            
+
         elif view_name == "AudioMaker":
-            self.stacked_widget.setCurrentWidget(self.audio_maker_widget)  # Switch to Audio Maker view    
-            
-            
-            
+            self.stacked_widget.setCurrentWidget(self.audio_maker_widget)  # Switch to Audio Maker view
+
         elif view_name == "Help":
             self.stacked_widget.setCurrentWidget(self.help_widget)
-            
-            
-            
+
         elif view_name == "Equalizer":
             self.stacked_widget.setCurrentWidget(self.equalizer_widget)
-            
-
 
     def create_arathuppaal_tab(self):
         """Creates the Arathuppaal tab with chapter list and Kural content display."""
@@ -179,11 +225,9 @@ class ThirukkuralApp(QMainWindow):
 
         # Create a QSplitter to allow resizing
         splitter = QSplitter(Qt.Horizontal)
-        
+
         splitter.addWidget(self.chapters_list)
-        
-        # splitter.addWidget(self.chapter_content := QTextEdit())
-        
+
         self.chapter_content = QTextEdit()
         splitter.addWidget(self.chapter_content)
 
@@ -274,8 +318,6 @@ class ThirukkuralApp(QMainWindow):
         kamathuppaal_tab.setLayout(layout)
         self.thirukkural_tabs.addTab(kamathuppaal_tab, "காமத்துப்பால்")
 
-
-
     def display_arathuppaal_chapter(self, index):
         """Displays the content for the selected chapter in Arathuppaal."""
         if index >= 0 and index < 38:  # Arathuppaal has 38 chapters
@@ -304,10 +346,6 @@ class ThirukkuralApp(QMainWindow):
         else:
             self.chapter_content_porutpaal.setPlainText("அதிகாரத்தை தேர்ந்தெடுக்கவும்.")
 
-
-
-
-
     def display_kamathuppaal_chapter(self, index):
         """Displays the content for the selected chapter in Kamathuppaal."""
         if index >= 0 and index < 25:  # Kamathuppaal has 25 chapters
@@ -321,8 +359,6 @@ class ThirukkuralApp(QMainWindow):
             self.chapter_content_kamathuppaal.setPlainText(formatted_text)
         else:
             self.chapter_content_kamathuppaal.setPlainText("அதிகாரத்தை தேர்ந்தெடுக்கவும்.")
-
-
 
     def search_kural(self):
         """Searches for a specific Kural based on input in the search bar."""
