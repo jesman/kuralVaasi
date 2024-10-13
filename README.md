@@ -8,6 +8,51 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+## Steps to Run the Project
+
+Clone the Repository
+
+Open your terminal or command prompt and run the following command to clone the repository:
+
+git clone https://github.com/jesmane/kuralVaasi.git
+Replace your-username with your actual GitHub username.
+
+Navigate to the Project Directory
+
+Change to the project directory:
+
+cd kuralVaasi
+Create a Virtual Environment (optional)
+
+If you want to create a virtual environment, run:
+
+
+python -m venv venv
+To activate the virtual environment:
+
+On Windows:
+
+
+venv\Scripts\activate
+On macOS/Linux:
+
+source venv/bin/activate
+Install the Requirements
+
+Install the necessary packages listed in requirements.txt:
+
+pip install -r requirements.txt
+Run the Application
+
+Run your PyQt5 application with the following command:
+
+
+python main.py
+Replace main.py with the entry point of your application if it’s different.
+
+Additional Notes
+Ensure that you have any additional resources (like images, fonts, etc.) required by your application in the correct directories.
+If you encounter any issues, check the console output for error messages and resolve them as necessary.
 
 ## திருக்குறள் தேடல் 
 அறத்துப்பால், பொருட்பால், அல்லது காமத்துப்பால் தாவல்களில் எந்ததாவலிலும் நீங்கள் இருக்கலாம். மேல் பகுதியில் உள்ள தேடல் பட்டியை (Search Bar) கவனிக்கவும்.
