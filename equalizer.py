@@ -13,9 +13,7 @@ Description: This script provides functionality to generate Tamil text-to-speech
              an MP3 file, and listen to the generated audio.
 
 License: MIT License
-
 """
-
 
 import random
 import sys
@@ -57,7 +55,7 @@ class Equalizer(QMainWindow):  # Change from QWidget to QMainWindow
 
         # Set dark mode style
         self.setStyleSheet("background-color: #2E2E2E; color: white;")
-        
+
         # Layout setup
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
@@ -66,11 +64,31 @@ class Equalizer(QMainWindow):  # Change from QWidget to QMainWindow
 
         layout.addWidget(self.graphics_view)  # Add the graphics view to the layout
 
+        # Set button styles
+        button_style = """
+            QPushButton {
+                background-color: #FF7F50;  /* Coral color */
+                color: white;  /* White text */
+                font-size: 14px;  /* Font size */
+                border: none;  /* No border */
+                border-radius: 5px;  /* Rounded corners */
+                padding: 10px;  /* Padding around text */
+            }
+            QPushButton:hover {
+                background-color: #FF4500;  /* Orange Red on hover */
+            }
+            QPushButton:pressed {
+                background-color: #FF6347;  /* Tomato on press */
+            }
+        """
+
         self.open_button = QPushButton('ஒலிக்கோப்பைத் திறக்கவும்')
+        self.open_button.setStyleSheet(button_style)
         self.open_button.clicked.connect(self.open_file)
         layout.addWidget(self.open_button)
 
         self.play_button = QPushButton('இசைக்க | நிறுத்த | மீண்டும் இசைக்க')
+        self.play_button.setStyleSheet(button_style)
         self.play_button.clicked.connect(self.play_pause)
         layout.addWidget(self.play_button)
 
@@ -155,3 +173,10 @@ class Equalizer(QMainWindow):  # Change from QWidget to QMainWindow
             self.is_playing = False
             self.timer.stop()  # Stop the timer when paused
             print("Audio paused.")
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    equalizer = Equalizer()
+    equalizer.show()
+    sys.exit(app.exec_())
+
