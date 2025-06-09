@@ -17,39 +17,24 @@ Open your terminal or command prompt and run the following command to clone the 
 git clone https://github.com/jesman/kuralVaasi.git
 cd kuralVaasi
 
-Create a Virtual Environment (optional)
-
-If you want to create a virtual environment, run:
-
-python -m venv venv
-To activate the virtual environment:
-
-## On Windows:
-venv\Scripts\activate
-
-## On macOS/Linux:
-source venv/bin/activate
 
 ## Install the Requirements
 
 Install the necessary packages listed in requirements.txt:
-
 pip install -r requirements.txt
 
-Install VLC
+## Install VLC
 
-## macOS
+## On Windows:
+Download and install from: https://www.videolan.org/vlc/
 
+## On macOS
 brew install --cask vlc
 
 ## Linux (Debian/Ubuntu)
-
-
 sudo apt-get update
 sudo apt-get install -y vlc
 
-## Windows
-Download and install from: https://www.videolan.org/vlc/
 
 ## Run the Application
 
