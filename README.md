@@ -36,6 +36,21 @@ Install the necessary packages listed in requirements.txt:
 
 pip install -r requirements.txt
 
+Install VLC
+
+## macOS
+
+brew install --cask vlc
+
+## Linux (Debian/Ubuntu)
+
+
+sudo apt-get update
+sudo apt-get install -y vlc
+
+## Windows
+Download and install from: https://www.videolan.org/vlc/
+
 ## Run the Application
 
 Run your PyQt5 application with the following command:
@@ -75,4 +90,4 @@ Replace main.py with the entry point of your application if it’s different.
 
 
 ## Author: Jesman Anthonypillai
-## மின்னஞ்சல்: jesman@gmail.com
+## மின்னஞ்சல்: jesman23@gmail.com
