@@ -1,12 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """
 Filename: help.py
 Author: Jesman Anthonypillai
 Email: jesman23@gmail.com
-Date: 2024-07-05
-Version: 1.0
+Date: 2025-08-05
+Version: 1.12
 
 Description: This script provides functionality to generate help 
              Module for main app
@@ -51,7 +49,7 @@ class show_help(QWidget):
 
         # Create a QLabel to display the help text
         help_label = QLabel(help_text)  # Create QLabel with the help text
-        help_label.setStyleSheet("font-size: 18px; color: gold; font-weight: bold;")  # Set style for QLabel
+        help_label.setStyleSheet("font-size: 18px; color: blue; font-weight: bold;")  # Set style for QLabel
         
         help_label.setWordWrap(True)  # Ensure text wraps within the window
         layout.addWidget(help_label)
@@ -76,4 +74,3 @@ if __name__ == "__main__":
     help_window = show_help()
     help_window.show()
     sys.exit(app.exec_())
-
