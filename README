@@ -1,0 +1,19 @@
+# KuralVaasi 🎧
+
+**KuralVaasi** is a Python-based application that brings the timeless wisdom of the Thirukkural to life. 
+Users can search for verses and listen to them in Tamil, making it an engaging tool for learners and enthusiasts.
+
+## 📦 Features
+- 🔍 Search Thirukkural by number or keyword
+- 🔊 Audio playback for each verse
+- 🗂️ Includes Tamil and English text files
+- 🧰 Simple Python scripts for easy use
+
+## 🚀 Getting Started
+
+Clone the repo and run the main script:
+
+```bash
+git clone https://github.com/jesman/kuralVaasi.git
+cd kuralVaasi
+python main.py
